@@ -1,0 +1,54 @@
+.main{
+    background-color: #BD1877;
+    color: #fff;
+    padding: 2rem 0;
+}
+
+.foot-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.landing-bg{
+    filter: brightness(0.5);
+    position: relative;
+}
+
+/* .landing-btn{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+} */
+
+.landing-btn button{
+    background-color: #F8B9D4;
+    padding: 1rem 4rem;
+    position: absolute;
+    border: none;
+    color: #000;
+    top: 50%;
+    left: 45%;
+}
+
+.landing-btn button:hover{
+    background-color: #F8B9D4;
+    border: none;
+    color: #000;
+}
+
+.form-footer{
+    opacity: 0.5;
+}
+
+.form-footer input, textarea{
+    border: 2px solid #fff;
+    margin: 0.6rem;
+    color: #fff;
+}
+
+.form-footer >.footer-btn{
+    opacity: 0.6;
+border: none;
+}
