@@ -26,11 +26,12 @@ export default function Footer() {
           <div>
             <h4>Contact Us</h4>
             <Form className="form-footer">
-                <Form.Control type="email" placeholder="Name" />
-                <Form.Control type="password" placeholder="Email" />
+                <Form.Control type="email" placeholder="Name" className="input-field" />
+                <Form.Control type="password" placeholder="Email"  />
                 <Form.Control type="password" placeholder="Phone no" />
                 <Form.Control as="textarea" placeholder="Type your message here.." rows={3} />
-                <Button type="submit" className="footer-btn">Submit</Button>
+                <Button type="submit" className="footer-btn" style={{opacity: "0.9",
+border:"none", backgroundColor:"#FFCBE6", color:"#000", margin: "0 0.5rem" }}>Submit</Button>
             </Form>
           </div>
           </div>

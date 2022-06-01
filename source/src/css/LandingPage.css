@@ -14,22 +14,17 @@
     position: relative;
 }
 
-/* .landing-btn{
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-
-} */
 
 .landing-btn button{
     background-color: #F8B9D4;
     padding: 1rem 4rem;
     position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
     border: none;
     color: #000;
-    top: 50%;
-    left: 45%;
 }
 
 .landing-btn button:hover{
@@ -48,7 +43,7 @@
     color: #fff;
 }
 
-.form-footer >.footer-btn{
+/* .form-footer >.footer-btn{
     opacity: 0.6;
 border: none;
-}
+} */

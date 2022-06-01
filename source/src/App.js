@@ -1,16 +1,18 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import {Route, BrowserRouter as Router} from "react-router-dom";
-import LandingNav from "./components/LandingPage/LandingNav";
-import Main from './components/LandingPage/Main';
+import "bootstrap/dist/css/bootstrap.min.css";
+import {
+  Route,
+  BrowserRouter as Router,
+} from "react-router-dom";
+import HomePage from "./components/HomePage/HomePage";
+import Main from "./components/LandingPage/Main";
 function App() {
   return (
     <>
-    
-    <Router>
-    <Route path="/" component={Main} />
-    </Router>
+      <Router>
+        <Route exact path="/" component={Main} />
+        <Route exact path="/home" component={HomePage} />
+      </Router>
     </>
-    
   );
 }
 
