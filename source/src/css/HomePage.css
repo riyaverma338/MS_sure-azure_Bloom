@@ -1,0 +1,21 @@
+.fund-raise{
+    background-color: #7E77DD;
+    margin: 6rem 0;
+    height: 20vw;
+}
+
+.fund-raise img{
+    height: 100%;
+}
+
+.home-btns button{
+    background-color: #FFCBE6;
+    border: 2px solid #BD1877;
+    color: #000;
+    margin: 0 1rem;
+    padding: 0.5rem 1.5rem;
+}
+.home-btns button:hover{
+    background-color: #FFCBE6;
+    border: 2px solid #fff;
+}

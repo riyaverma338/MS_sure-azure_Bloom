@@ -1,0 +1,15 @@
+.doctor-main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 4rem;
+}
+
+.doctor-card{
+    margin-top: 2rem;
+}
+
+.searchbar{
+    width: 22%;
+    margin: 3rem auto;
+}
