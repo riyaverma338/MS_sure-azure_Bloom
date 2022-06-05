@@ -19,7 +19,7 @@ export default function HomePage() {
               With supporting text below as a natural lead-in to additional
               content.
             </Card.Text>
-            <Button variant="primary">Check Out</Button>
+            <Button variant="primary" onClick={e=>window.location.href="/module"}>Check Out</Button>
           </Card.Body> 
         </Card>
       </Container>

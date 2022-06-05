@@ -17,13 +17,10 @@ function App() {
         <Route exact path="/" element={<Main/>} />
         <Route exact path="/home" element={<HomePage/>} />
         <Route exact path="/login" element={<Login/>} />
-        <Route exact path="/module" component={BreastCancer} />
-        <Route exact path="/doctor" component={DoctorMain} />
+        <Route exact path="/module" element={<BreastCancer/>} />
+        <Route exact path="/doctor" element={<DoctorMain/>} />
         </Routes>
       </Router>
-      {/* <BreastCancer /> */}
-      {/* <Topic1 /> */}
-      {/* <Topic1Detail /> */}
     
     </>
   );
