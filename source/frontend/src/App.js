@@ -2,6 +2,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // import Topic1Detail from "./components/Modules/Disease/DiseaseInfo/Topic1Detail";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Login from "./components/autherisation/Login";
+import DoctorMain from "./components/Doctors/DoctorMain";
+
 import HomePage from "./components/HomePage/HomePage";
 import Main from "./components/LandingPage/Main";
 import BreastCancer from "./components/Modules/Disease/DiseaseInitial/BreastCancer";
@@ -15,7 +17,8 @@ function App() {
         <Route exact path="/" element={<Main/>} />
         <Route exact path="/home" element={<HomePage/>} />
         <Route exact path="/login" element={<Login/>} />
-
+        <Route exact path="/module" component={BreastCancer} />
+        <Route exact path="/doctor" component={DoctorMain} />
         </Routes>
       </Router>
       {/* <BreastCancer /> */}

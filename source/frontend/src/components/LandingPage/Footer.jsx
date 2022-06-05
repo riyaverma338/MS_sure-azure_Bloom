@@ -11,7 +11,7 @@ import { Link } from "@mui/material";
 export default function Footer() {
   return (
     <>
-      <div className="main">
+      <div className="main" id="contact">
         <Container>
           <div className="foot-content">
           <div>
@@ -26,7 +26,7 @@ export default function Footer() {
           <div>
             <h4>Contact Us</h4>
             <Form className="form-footer">
-                <Form.Control type="email" placeholder="Name" className="input-field" />
+                <Form.Control type="email" placeholder="Name" className="input-field-footer" />
                 <Form.Control type="password" placeholder="Email"  />
                 <Form.Control type="password" placeholder="Phone no" />
                 <Form.Control as="textarea" placeholder="Type your message here.." rows={3} />
