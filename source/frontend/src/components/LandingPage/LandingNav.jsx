@@ -9,7 +9,7 @@ export default function LandingNav() {
     <Navbar.Brand href="#home">WomenEx</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
-      <Nav className="me-auto">
+      <Nav className="justify-content-end"  style={{ width: "100%" }}>
         <Nav.Link href="/home">Home</Nav.Link>
         <Nav.Link href="#link">About Us</Nav.Link>
         <Nav.Link href="#contact">Contact</Nav.Link>

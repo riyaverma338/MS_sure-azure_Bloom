@@ -1,7 +1,9 @@
 .fund-raise{
-    background-color: #7E77DD;
+    background-color: #5D48B8;
     margin: 6rem 0;
     height: 20vw;
+    display: flex;
+    color: #fff;
 }
 
 .fund-raise img{
@@ -12,7 +14,7 @@
     background-color: #FFCBE6;
     border: 2px solid #BD1877;
     color: #000;
-    margin: 0 1rem;
+    margin: 0 0.5rem;
     padding: 0.5rem 1.5rem;
 }
 .home-btns button:hover{
