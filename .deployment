@@ -1,2 +1,2 @@
 [config]
-project = source/frontend
+project = ./source/frontend
