@@ -1,17 +1,9 @@
-<<<<<<< HEAD
 import React,{ useContext} from "react";
-import women from "../../assets/womenimg.jpg";
+import women from "../../assets/landing1.jpg";
 import "../../css/LandingPage.css"
 import { Container, Card,  Button } from "react-bootstrap";
-
 import { UserContext } from "./../context/UserContext"
 
-=======
-import React from "react";
-import women from "../../assets/landing1.jpg";
-import "../../css/LandingPage.css";
-import { Container, Card, Button } from "react-bootstrap";
->>>>>>> d8a96158690e4b555cec0e34eb3156c69a259ec1
 export default function Header() {
   const [userContext, setUserContext] = useContext(UserContext)
   const handleRedirect=(e)=>{
@@ -26,13 +18,7 @@ export default function Header() {
     <>
       <img className="landing-bg" src={women} width="100%" height="720vh" />
       <div className="landing-btn">
-<<<<<<< HEAD
       <Button onClick={e=>handleRedirect(e)}>Try Now!</Button>
-=======
-        <Button onClick={(e) => (window.location.href = "/login")}>
-          Try Now!
-        </Button>
->>>>>>> d8a96158690e4b555cec0e34eb3156c69a259ec1
       </div>
 
       {/* AboutUS */}
