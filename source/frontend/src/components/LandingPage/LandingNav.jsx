@@ -6,7 +6,7 @@ export default function LandingNav() {
     <>
       <Navbar bg="light" expand="lg">
         <Container fluid>
-    <Navbar.Brand href="#home">WomenEx</Navbar.Brand>
+    <Navbar.Brand href="/">WomenEx</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="me-auto">

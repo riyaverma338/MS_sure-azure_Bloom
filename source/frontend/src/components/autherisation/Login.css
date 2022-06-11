@@ -107,15 +107,16 @@ width: 250px;
 
     .auth-form{
         display: flex;
-    flex-direction: column;
-    background: #fdceccd9;
-    height: 400px;
-    width: 400px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 14px;
+        flex-direction: column;
+        background: #fdceccd9;
+        height: 400px;
+        width: 400px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 14px;
+        margin: auto;
     }
-    .auth-form>input{
+    .auth-form>input, #password{
         width: 70%;
         border: none;
         padding: 0.4rem 0.8rem;
@@ -124,7 +125,10 @@ width: 250px;
         border-radius: 7px;
         margin-bottom: 2rem;
     }
-    .auth-form>input:focus-visible{
+    #password{
+        width: 100%;
+    }
+    .auth-form>input:focus-visible, #password:focus-visible{
         outline: none;
     }
     .auth-form>button{
@@ -138,3 +142,31 @@ width: 250px;
     .auth-form>button:hover{
         box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
     }
+    
+
+    /* signin */
+
+    .signin{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+    }
+    .signin>form>h3{
+        font-weight: 300;
+        color: #6f6f6f;
+        margin-bottom: 1rem;
+    }
+
+    .bp4-label{
+        		    font-size: 20px;
+         		    color: grey;
+         		    font-weight: 300;
+        }
+        #phoneNumber{
+        width: 260px;
+        }
+        .bp4-form-group{
+        
+            margin-bottom: 1rem;
+        }

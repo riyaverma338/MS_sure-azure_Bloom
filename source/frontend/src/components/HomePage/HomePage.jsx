@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useEffect,useContext } from "react";
 import { Container, Card, Button } from "react-bootstrap";
 import HomeNav from "./HomeNav";
 import donate from "../../assets/donate.gif";
 
 import "../../css/HomePage.css";
 import Footer from "../LandingPage/Footer";
+import { UserContext } from "../context/UserContext";
+import { auth } from "../config/firebase";
 
 export default function HomePage() {
+  const [userContext, setUserContext] = useContext(UserContext)
+
+  useEffect(()=>{
+    if(auth){
+      console.log(auth.currentUser)
+    }
+  },[])
   return (
     <>
       <HomeNav />

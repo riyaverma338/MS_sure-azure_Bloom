@@ -1,13 +1,25 @@
-import React from "react";
+import React,{ useContext} from "react";
 import women from "../../assets/womenimg.jpg";
 import "../../css/LandingPage.css"
 import { Container, Card,  Button } from "react-bootstrap";
+
+import { UserContext } from "./../context/UserContext"
+
 export default function Header() {
+  const [userContext, setUserContext] = useContext(UserContext)
+  const handleRedirect=(e)=>{
+    e.preventDefault();
+    !userContext.token ?
+    window.location.href="/login"
+    :
+    window.location.href="/"
+  }
+
   return (
     <>
       <img className="landing-bg" src={women} width="100%" />
       <div className="landing-btn">
-      <Button onClick={e=>window.location.href="/login"}>Try Now!</Button>
+      <Button onClick={e=>handleRedirect(e)}>Try Now!</Button>
       </div>
       
       {/* AboutUS */}
