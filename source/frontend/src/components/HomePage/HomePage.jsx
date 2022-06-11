@@ -1,15 +1,15 @@
-import React, { useEffect,useContext } from "react";
+import React, { useEffect } from "react";
 import { Container, Card, Button } from "react-bootstrap";
 import HomeNav from "./HomeNav";
 import donate from "../../assets/donate_women.jpg";
 
 import "../../css/HomePage.css";
 import Footer from "../LandingPage/Footer";
-import { UserContext } from "../context/UserContext";
+// import { UserContext } from "../context/UserContext";
 import { auth } from "../config/firebase";
 
 export default function HomePage() {
-  const [userContext, setUserContext] = useContext(UserContext)
+  // const [userContext, setUserContext] = useContext(UserContext)
 
   useEffect(()=>{
     if(auth){
@@ -36,7 +36,7 @@ export default function HomePage() {
       </Container>
       <div className="fund-raise">
         <div>
-        <img src={donate} />
+        <img src={donate} alt="donate"/>
         </div>
         <div className="fund-text">
         <h1>You Can Help !</h1>

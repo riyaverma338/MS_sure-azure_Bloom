@@ -15,7 +15,7 @@ export default function Footer() {
         <Container>
           <div className="foot-content">
           <div>
-            <h4><img width="70%" src={logo} /></h4>
+            <h4><img width="70%" src={logo} alt="logo"/></h4>
             <p>Follow us on Social Media</p>
             <YouTubeIcon style={{marginRight: "0.5rem"}}/>
             <InstagramIcon style={{margin: "0.5rem"}}/>

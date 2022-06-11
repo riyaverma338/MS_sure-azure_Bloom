@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext,useRef } from 'react';
+import React, { useState} from 'react';
 import { firebase, auth } from '../config/firebase';
 import anim from './../assets/phoneNum.gif'
 import './Login.css'

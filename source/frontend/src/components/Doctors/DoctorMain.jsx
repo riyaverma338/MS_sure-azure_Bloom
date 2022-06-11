@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Card, Button, FormControl, InputGroup} from "react-bootstrap";
 import doctorimg from "../../assets/doctor.jpg"
-import HomeNav from "../HomePage/HomeNav";
-import Footer from "../LandingPage/Footer";
+// import HomeNav from "../HomePage/HomeNav";
+// import Footer from "../LandingPage/Footer";
 import "../../css/Doctor.css";
 import doctors from "./doctor";
 

@@ -1,7 +1,7 @@
 import React from "react";
-import Sidebar from "../../Template/Sidebar";
+// import Sidebar from "../../Template/Sidebar";
 import "../../../../css/BreastCancerCSS/Topic1Detail.css";
-import Footer from "../../../LandingPage/Footer";
+// import Footer from "../../../LandingPage/Footer";
 
 const Topic1Detail = () => {
   return (

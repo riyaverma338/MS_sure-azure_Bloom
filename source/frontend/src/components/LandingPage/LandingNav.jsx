@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar,Nav, Container, Button } from "react-bootstrap";
+import { Navbar,Nav, Container } from "react-bootstrap";
 import logo from "../../assets/logo.png";
 export default function LandingNav() {
   return (
@@ -7,7 +7,7 @@ export default function LandingNav() {
       <Navbar bg="light" expand="lg">
         <Container fluid>
     <Navbar.Brand href="#home">
-      <img src={logo} width="70%"/>
+      <img src={logo} width="70%" alt="logo"/>
     </Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">

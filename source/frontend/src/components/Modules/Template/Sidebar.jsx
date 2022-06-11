@@ -2,7 +2,7 @@ import React from "react";
 import "../../../css/Sidebar.css";
 import { GrAddCircle, GrMenu } from "react-icons/gr";
 import { BsSearch } from "react-icons/bs";
-import { Button } from "react-bootstrap";
+
 
 const liItems = [
   "What is Breast Cancer ?",
@@ -18,17 +18,17 @@ const liItems = [
 
 ];
 const Sidebar = ({handlesetState}) => {
-  const renderListElement = (text,index) => {
-  console.log(index)
+  // const renderListElement = (text,index) => {
+  // console.log(index)
     
 
-    return (
-      <div className="info-list">
-        <GrAddCircle />
-        <li className="li-info" onClick={e=>handleClick(e)}>{text}</li>
-      </div>
-    );
-  };
+  //   return (
+  //     <div className="info-list">
+  //       <GrAddCircle />
+  //       <li className="li-info" onClick={e=>handleClick(e)}>{text}</li>
+  //     </div>
+  //   );
+  // };
 
   const handleClick=(e,index)=>{
     e.preventDefault();

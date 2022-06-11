@@ -16,7 +16,7 @@ export default function HomeNav() {
     <Navbar bg="light" expand="lg">
   <Container fluid>
     <Navbar.Brand href="#">
-      <img src={logo} width="70%"/>
+      <img src={logo} width="70%" alt="logo"/>
     </Navbar.Brand>
     <Navbar.Toggle aria-controls="navbarScroll" />
     <Navbar.Collapse id="navbarScroll">

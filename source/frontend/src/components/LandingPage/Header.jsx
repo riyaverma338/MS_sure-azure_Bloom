@@ -1,7 +1,7 @@
 import React,{ useContext} from "react";
 import women from "../../assets/landing1.jpg";
 import "../../css/LandingPage.css"
-import { Container, Card,  Button } from "react-bootstrap";
+import { Container, Button } from "react-bootstrap";
 import { UserContext } from "./../context/UserContext"
 
 export default function Header() {
@@ -16,7 +16,7 @@ export default function Header() {
 
   return (
     <>
-      <img className="landing-bg" src={women} width="100%" height="720vh" />
+      <img className="landing-bg" src={women} width="100%" height="720vh" alt="bg"/>
       <div className="landing-btn">
       <Button onClick={e=>handleRedirect(e)}>Try Now!</Button>
       </div>

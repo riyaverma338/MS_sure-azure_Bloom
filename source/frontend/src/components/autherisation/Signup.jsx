@@ -6,7 +6,7 @@ import otpAnim from './../assets/otp.gif'
 import './Login.css'
 
 const Signup=()=>{
-    const [isSubmitting, setIsSubmitting] = useState(false)
+    // const [isSubmitting, setIsSubmitting] = useState(false)
     const [error, setError] = useState("")
     const [firstName, setFirstName] = useState("")
     const [lastName, setLastName] = useState("")
@@ -23,7 +23,8 @@ const Signup=()=>{
   
     useEffect(()=>{
       console.log(auth)
-    },[])
+      console.log(error)
+    },[error])
   
     useEffect(() => {
       if (!isFirstRender.current) {
@@ -34,19 +35,19 @@ const Signup=()=>{
   
     const formSubmitHandler = e => {
       e.preventDefault()
-      setIsSubmitting(true)
+      // setIsSubmitting(true)
       setError("")
   
       const genericErrorMessage = "Something went wrong! Please try again later."
   
-      fetch("http://localhost:8081/" + "users/signup", {
+      fetch("http://localhost:8081/users/signup", {
         method: "POST",
         credentials: "include",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ firstName, lastName, phoneNumber:"+91"+mynumber, password }),
       })
         .then(async response => {
-          setIsSubmitting(false)
+          // setIsSubmitting(false)
           if (!response.ok) {
             if (response.status === 400) {
               setError("Please fill all the fields correctly!")
@@ -68,8 +69,9 @@ const Signup=()=>{
             }
         })
         .catch(error => {
-          setIsSubmitting(false)
+          // setIsSubmitting(false)
           setError(genericErrorMessage)
+         
         })
     }
   

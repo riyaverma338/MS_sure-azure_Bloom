@@ -1,4 +1,4 @@
-export default [
+var doctors=[
     {
         "id" : 1,
         "name" : "Radhika",
@@ -26,3 +26,5 @@ export default [
     },
 
 ]
+
+export default doctors
