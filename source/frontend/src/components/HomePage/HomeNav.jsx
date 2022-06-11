@@ -18,18 +18,21 @@ export default function HomeNav() {
     <Navbar.Toggle aria-controls="navbarScroll" />
     <Navbar.Collapse id="navbarScroll">
       <Nav
-        className="me-auto my-2 my-lg-0"
-        style={{ maxHeight: '100px' }}
+        className="justify-content-end home-btns"
+        style={{ maxHeight: '100px', width:"100%" }}
         navbarScroll
       >
-        <Nav.Link href="#action1">Home</Nav.Link>
+        {/* <Nav.Link href="#action1">Home</Nav.Link>
         <Nav.Link href="#action2">About Us</Nav.Link>
-        <Nav.Link href="#contact">Contact</Nav.Link>
-      </Nav>
+        <Nav.Link href="#contact">Contact</Nav.Link> */}
+         {/* <Button variant="outline-success">Login</Button>
+      <Button variant="outline-success">Donate</Button> */}
+     
       <div className="d-flex home-btns">
       <Button variant="outline-success" onClick={e=>signOut(e)}>Logout</Button>
       <Button variant="outline-success">Donate</Button>
       </div>
+      </Nav>
     </Navbar.Collapse>
   </Container>
 </Navbar>

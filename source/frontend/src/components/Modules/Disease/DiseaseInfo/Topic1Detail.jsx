@@ -1,14 +1,13 @@
 import React from "react";
 import Sidebar from "../../Template/Sidebar";
 import "../../../../css/BreastCancerCSS/Topic1Detail.css";
+import Footer from "../../../LandingPage/Footer";
 
 const Topic1Detail = () => {
   return (
     <>
       <div className="detail-main-container">
-        <div className="sidebar">
-          <Sidebar />
-        </div>
+        
         <div className="detail-mainbar">
         <h2 className="detail-section-head">What Is Cancer?</h2>
           <hr />

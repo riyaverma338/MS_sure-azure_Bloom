@@ -2,6 +2,7 @@ import React from "react";
 import "../../../css/Sidebar.css";
 import { GrAddCircle, GrMenu } from "react-icons/gr";
 import { BsSearch } from "react-icons/bs";
+import { Button } from "react-bootstrap";
 
 const liItems = [
   "What is Breast Cancer ?",
@@ -12,17 +13,25 @@ const liItems = [
   "Treatment",
   "Myths",
   "FAQs",
-  "Find Support",
 ];
-const Sidebar = () => {
-  const renderListElement = (text) => {
+const Sidebar = ({handlesetState}) => {
+  const renderListElement = (text,index) => {
+  console.log(index)
+    
+
     return (
       <div className="info-list">
         <GrAddCircle />
-        <li className="li-info">{text}</li>
+        <li className="li-info" onClick={e=>handleClick(e)}>{text}</li>
       </div>
     );
   };
+
+  const handleClick=(e,index)=>{
+    e.preventDefault();
+    handlesetState(index)
+  }
+
 
   return (
     <>
@@ -32,8 +41,21 @@ const Sidebar = () => {
           <BsSearch />
         </div>
         <div>
-          <ul>{liItems.map((item) => renderListElement(item))}</ul>
+          <ul>
+            {liItems.map((item,index) => {
+            return(
+            <div className="info-list">
+            <GrAddCircle />
+            <li className="li-info" onClick={e=>handleClick(e,index)}>{item}</li>
+          </div>
+            // renderListElement(item,index))
+          )})}
+          </ul>
         </div>
+      </div>
+      <div className="module-btns">
+      <Button >Get Support</Button>
+      <Button>Self Assessment</Button>
       </div>
       <div className="responsive-menu">
         <GrMenu className="menu-icon"/>

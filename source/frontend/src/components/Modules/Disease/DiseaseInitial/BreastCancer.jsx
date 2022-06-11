@@ -1,75 +1,33 @@
-import React from "react";
+import React,{useState} from "react";
 import "../../../../css/BreastCancerCSS/BreastCancer.css";
 import Sidebar from "../../Template/Sidebar";
+import Footer from "../../../LandingPage/Footer";
+import Topic2Detail from "../DiseaseInfo/Topic2Detail";
+import Topic1Detail from "../DiseaseInfo/Topic1Detail";
 
-const cardList = [
-  {
-    url: "https://www.nationalbreastcancer.org/wp-content/uploads/Individual-Webs-Icons-v03_overview.svg",
-    text: "What is Breast Cancer ?",
-  },
-  {
-    url: "https://www.nationalbreastcancer.org/wp-content/uploads/Individual-Webs-Icons-v03_self-exam-one-color.svg",
-    text: "Early Detection",
-  },
-  {
-    url: "https://www.nationalbreastcancer.org/wp-content/uploads/Individual-Webs-Icons-v03_diagnose.svg",
-    text: "Diagnosis",
-  },
-  {
-    url: "https://www.nationalbreastcancer.org/wp-content/uploads/Individual-Webs-Icons-v03_stages.svg",
-    text: "Stages",
-  },
-  {
-    url: "https://www.nationalbreastcancer.org/wp-content/uploads/Individual-Webs-Icons-v03_types.svg",
-    text: "Types of Breast Cancer",
-  },
-  {
-    url: "https://www.nationalbreastcancer.org/wp-content/uploads/Individual-Webs-Icons-v03_treatment.svg",
-    text: "Treatment",
-  },
-  {
-    url: "https://www.nationalbreastcancer.org/wp-content/uploads/Individual-Webs-Icons-v03_myths.svg",
-    text: "Myths",
-  },
-  {
-    url: "https://www.nationalbreastcancer.org/wp-content/uploads/faqs.png",
-    text: "FAQs",
-  },
-  {
-    url: "https://www.nationalbreastcancer.org/wp-content/uploads/Breast-Health-Guide-Icon.png",
-    text: "Find Support",
-  },
-];
 
-const renderCardItems = (item) => {
-  return (
-    <div className="info-cards">
-      <img src={item.url} className="card-img" alt="icon" />
-      <p className="card_title">{item.text}</p>
-    </div>
-  );
-};
 const BreastCancer = () => {
+
+  const [state,setState]=useState(0);
+
+  var comp;
+  switch(state){
+    case 0: comp=<Topic2Detail />
+             break;
+    // case 1 : comp=<Topic1Detail />
+    //         break;
+  }
+
   return (
     <>
       <div className="main-container">
         <div className="sidebar">
-          <Sidebar />
+          <Sidebar handlesetState={setState}/>
         </div>
-        <div className="mainbar">
-          <h2 className="section-head">Learn about breast cancer</h2>
-          <p className="section-content">
-            One of our top priorities is educating women on what they can do to
-            be proactive with their breast health. Knowledge and early detection
-            saves lives
-          </p>
-          <hr />
-          <h3 className="card-head">Start Here</h3>
-          <div className="info-cards-main-container">
-            {cardList.map((item) => renderCardItems(item))}
-          </div>
-        </div>
+       
+        {comp}
       </div>
+      <Footer/>
     </>
   );
 };
