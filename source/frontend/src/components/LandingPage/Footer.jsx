@@ -1,12 +1,12 @@
 import React from "react";
 import { Button, Container, Form} from "react-bootstrap";
 import YouTubeIcon from '@mui/icons-material/YouTube';
+import logo from "../../assets/logo.png";
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import "../../css/LandingPage.css"
-import { Link } from "@mui/material";
 
 export default function Footer() {
   return (
@@ -15,13 +15,13 @@ export default function Footer() {
         <Container>
           <div className="foot-content">
           <div>
-            <h4>WomenEx</h4>
+            <h4><img width="70%" src={logo} /></h4>
             <p>Follow us on Social Media</p>
-            <YouTubeIcon/>
-            <InstagramIcon/>
-            <FacebookIcon/>
-            <TwitterIcon/>
-            <LinkedInIcon/>
+            <YouTubeIcon style={{marginRight: "0.5rem"}}/>
+            <InstagramIcon style={{margin: "0.5rem"}}/>
+            <FacebookIcon style={{margin: "0.5rem"}}/>
+            <TwitterIcon style={{margin: "0.5rem"}}/>
+            <LinkedInIcon style={{margin: "0.5rem"}}/>
           </div>
           <div>
             <h4>Contact Us</h4>

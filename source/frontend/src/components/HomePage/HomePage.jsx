@@ -38,10 +38,12 @@ export default function HomePage() {
         <div>
         <img src={donate} />
         </div>
-        <div>
-        <h1>You can Help</h1>
-        <h4>Make an impact by providing assistance to needy women</h4>
-        <h3>DONATE TODAY!</h3>
+        <div className="fund-text">
+        <h1>You Can Help !</h1>
+        <h4>We need you to join us in the fight for women's Health Care. <br/>Make an impact by providing assistance in the form of Medical Aid to needy women. </h4>
+        <div className="donate-btns">
+        <Button>Make a Donation Today!</Button>
+        </div>
       </div>
       </div>
 

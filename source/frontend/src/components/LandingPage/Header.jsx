@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React,{ useContext} from "react";
 import women from "../../assets/womenimg.jpg";
 import "../../css/LandingPage.css"
@@ -5,6 +6,12 @@ import { Container, Card,  Button } from "react-bootstrap";
 
 import { UserContext } from "./../context/UserContext"
 
+=======
+import React from "react";
+import women from "../../assets/landing1.jpg";
+import "../../css/LandingPage.css";
+import { Container, Card, Button } from "react-bootstrap";
+>>>>>>> d8a96158690e4b555cec0e34eb3156c69a259ec1
 export default function Header() {
   const [userContext, setUserContext] = useContext(UserContext)
   const handleRedirect=(e)=>{
@@ -17,25 +24,31 @@ export default function Header() {
 
   return (
     <>
-      <img className="landing-bg" src={women} width="100%" />
+      <img className="landing-bg" src={women} width="100%" height="720vh" />
       <div className="landing-btn">
+<<<<<<< HEAD
       <Button onClick={e=>handleRedirect(e)}>Try Now!</Button>
+=======
+        <Button onClick={(e) => (window.location.href = "/login")}>
+          Try Now!
+        </Button>
+>>>>>>> d8a96158690e4b555cec0e34eb3156c69a259ec1
       </div>
-      
+
       {/* AboutUS */}
       <Container>
-        <h1>About Us</h1>
-        <p>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum
+        <div style={{margin: "4rem 0"}}>
+        <h2 style={{margin: "1rem 0"}}>ABOUT US</h2>
+        <p id="about">
+          Bloom is a platform build to empower women in health sector so that
+          they can have awareness of fatal diseases like Breast Cancer, Cervical
+          Cancer, Osteoporosis, Cardiovascular Disease etc. They can also
+          schedule their appointment to meet doctors via our app. Bloom
+          will also provide medical aid support where people can donate and help women who cannot afford the treatment
+          expenses. 
         </p>
 
-        <h1>Blogs</h1>
+        {/* <h1>Blogs</h1>
         <Card style={{ width: "18rem" }}>
           <Card.Img variant="top" src="holder.js/100px180" />
           <Card.Body>
@@ -46,7 +59,8 @@ export default function Header() {
             </Card.Text>
             <Button variant="primary">Go somewhere</Button>
           </Card.Body>
-        </Card>
+        </Card> */}
+        </div>
       </Container>
     </>
   );
