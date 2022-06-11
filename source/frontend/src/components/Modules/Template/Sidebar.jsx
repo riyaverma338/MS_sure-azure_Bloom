@@ -13,6 +13,9 @@ const liItems = [
   "Treatment",
   "Myths",
   "FAQs",
+  "Get Support",
+  "Self Assessment"
+
 ];
 const Sidebar = ({handlesetState}) => {
   const renderListElement = (text,index) => {
@@ -53,10 +56,10 @@ const Sidebar = ({handlesetState}) => {
           </ul>
         </div>
       </div>
-      <div className="module-btns">
+      {/* <div className="module-btns">
       <Button >Get Support</Button>
       <Button>Self Assessment</Button>
-      </div>
+      </div> */}
       <div className="responsive-menu">
         <GrMenu className="menu-icon"/>
         <BsSearch className="search-icon" />

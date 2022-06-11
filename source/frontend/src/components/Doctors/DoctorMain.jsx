@@ -9,8 +9,8 @@ import doctors from "./doctor";
 
 export default function DoctorMain() {
   return (
-    <>
-      <HomeNav />
+    <div className="doctContainer">
+      {/* <HomeNav /> */}
       <InputGroup className="col-6 searchbar">
           <FormControl
             placeholder="Search"
@@ -36,7 +36,7 @@ export default function DoctorMain() {
         </Card>
         ))}
       </Container>
-      <Footer/>
-    </>
+      {/* <Footer/> */}
+    </div>
   );
 }

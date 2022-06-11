@@ -4,6 +4,7 @@ import Sidebar from "../../Template/Sidebar";
 import Footer from "../../../LandingPage/Footer";
 import Topic2Detail from "../DiseaseInfo/Topic2Detail";
 import Topic1Detail from "../DiseaseInfo/Topic1Detail";
+import DoctorMain from "../../../Doctors/DoctorMain";
 
 
 const BreastCancer = () => {
@@ -14,6 +15,7 @@ const BreastCancer = () => {
   switch(state){
     case 0: comp=<Topic2Detail />
              break;
+    case 8: comp=<DoctorMain/>
     // case 1 : comp=<Topic1Detail />
     //         break;
   }
