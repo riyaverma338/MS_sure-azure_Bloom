@@ -1,12 +1,15 @@
 import React from 'react'
-import { Navbar, Container, Nav, Button } from 'react-bootstrap'
+import { Navbar, Container, Nav, Button } from 'react-bootstrap';
+import logo from "../../assets/logo.png";
 import "../../css/HomePage.css";
 export default function HomeNav() {
   return (
     <>
     <Navbar bg="light" expand="lg">
   <Container fluid>
-    <Navbar.Brand href="#">WomenEx</Navbar.Brand>
+    <Navbar.Brand href="#">
+      <img src={logo} width="70%"/>
+    </Navbar.Brand>
     <Navbar.Toggle aria-controls="navbarScroll" />
     <Navbar.Collapse id="navbarScroll">
       <Nav

@@ -1,15 +1,22 @@
 .fund-raise{
-    background-color: #5D48B8;
+    background-color: #FFCBE6;
     margin: 6rem 0;
-    height: 20vw;
+    height: 50vh;
     display: flex;
-    color: #fff;
 }
 
 .fund-raise img{
     height: 100%;
+    padding: 0.5rem;
 }
 
+.fund-text{
+    padding: 1rem;
+    line-height: 10rem;
+}
+.fund-text h1{
+    line-height: 4rem;
+}
 .home-btns button{
     background-color: #FFCBE6;
     border: 2px solid #BD1877;
@@ -20,4 +27,37 @@
 .home-btns button:hover{
     background-color: #FFCBE6;
     border: 2px solid #fff;
+}
+
+.donate-btns button{
+    background-color:  #BD1877;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+}
+
+.donate-btns button:hover{
+    background-color: #FFCBE6;
+    color: #BD1877;
+    border: 2px solid #BD1877;
+}
+
+@media screen and (max-width: 650px){
+    .fund-raise{
+        margin: 4rem 0;
+        height: 20vh;
+    }
+    .fund-text h1,h4{
+        font-size: 0.6rem;
+    }
+    .donate-btns button{
+        padding: 0.2rem;
+        font-size: 0.6rem;
+    }
+    .fund-text{
+        line-height: 0;
+    }
+    .fund-text h1{
+        line-height: 0;
+    }
 }
