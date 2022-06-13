@@ -1,4 +1,4 @@
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 // import Topic1Detail from "./components/Modules/Disease/DiseaseInfo/Topic1Detail";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Login from "./components/autherisation/Login";

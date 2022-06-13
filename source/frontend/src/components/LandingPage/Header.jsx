@@ -1,17 +1,20 @@
-import React,{ useContext} from "react";
+import React from "react";
 import women from "../../assets/landing1.jpg";
 import "../../css/LandingPage.css"
 import { Container, Button } from "react-bootstrap";
-import { UserContext } from "./../context/UserContext"
+// import { UserContext } from "./../context/UserContext"
+import { auth } from "../config/firebase";
 
 export default function Header() {
-  const [userContext, setUserContext] = useContext(UserContext)
+  // const [userContext, setUserContext] = useContext(UserContext)
   const handleRedirect=(e)=>{
     e.preventDefault();
-    !userContext.token ?
-    window.location.href="/login"
-    :
-    window.location.href="/"
+    if(auth){
+      window.location.href="/"
+    }
+    else{
+      window.location.href="/"
+    }
   }
 
   return (
