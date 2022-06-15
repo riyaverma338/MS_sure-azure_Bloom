@@ -18,17 +18,6 @@ const liItems = [
 
 ];
 const Sidebar = ({handlesetState}) => {
-  // const renderListElement = (text,index) => {
-  // console.log(index)
-    
-
-  //   return (
-  //     <div className="info-list">
-  //       <GrAddCircle />
-  //       <li className="li-info" onClick={e=>handleClick(e)}>{text}</li>
-  //     </div>
-  //   );
-  // };
 
   const handleClick=(e,index)=>{
     e.preventDefault();
@@ -51,15 +40,10 @@ const Sidebar = ({handlesetState}) => {
             <GrAddCircle />
             <li className="li-info" onClick={e=>handleClick(e,index)}>{item}</li>
           </div>
-            // renderListElement(item,index))
           )})}
           </ul>
         </div>
       </div>
-      {/* <div className="module-btns">
-      <Button >Get Support</Button>
-      <Button>Self Assessment</Button>
-      </div> */}
       <div className="responsive-menu">
         <GrMenu className="menu-icon"/>
         <BsSearch className="search-icon" />

@@ -3,27 +3,30 @@ import "../../../../css/BreastCancerCSS/BreastCancer.css";
 import Sidebar from "../../Template/Sidebar";
 import Footer from "../../../LandingPage/Footer";
 import Topic2Detail from "../DiseaseInfo/Topic2Detail";
-// import Topic1Detail from "../DiseaseInfo/Topic1Detail";
+import Topic1 from "../DiseaseInfoCards/Topic1";
 import DoctorMain from "../../../Doctors/DoctorMain";
+import ModuleNav from "../../Template/ModuleNav";
 
 
 const BreastCancer = () => {
 
-  const [state,setState]=useState(0);
+  const [state,setState]=useState(9);
 
   var comp;
   switch(state){
-    case 0: comp=<Topic2Detail />
+    case 0: comp=<Topic1 />
              break;
+    
     case 8: comp=<DoctorMain/>
             break;
+    // case 9: comp=<Topic2Detail/>
+    //          break;
     default : comp=<Topic2Detail />
-    // case 1 : comp=<Topic1Detail />
-    //         break;
   }
 
   return (
     <>
+    <ModuleNav/>
       <div className="main-container">
         <div className="sidebar">
           <Sidebar handlesetState={setState}/>

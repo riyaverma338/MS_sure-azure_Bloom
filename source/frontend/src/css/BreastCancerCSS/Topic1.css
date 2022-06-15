@@ -22,11 +22,12 @@ body{
 }
 
 .topic-mainbar{
-    width: 65%;
+    /* width: 65%; */
     background-color: rgb(255, 255, 255);
-    height: 100vh;
+    height: 110vh;
     display: flex;
     flex-direction: column;
+    overflow-y: scroll;
 }
 .topic-section-head{
     font-size: 45px;

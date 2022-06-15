@@ -7,21 +7,24 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import "../../css/LandingPage.css"
+import { textAlign } from "@mui/system";
 
 export default function Footer() {
   return (
     <>
       <div className="main" id="contact">
         <Container>
-          <div className="foot-content">
+          <div className="foot-content" style={{textAlign: "center"}}>
           <div>
             <h4><img width="70%" src={logo} alt="logo"/></h4>
             <p>Follow us on Social Media</p>
-            <YouTubeIcon style={{marginRight: "0.5rem"}}/>
-            <InstagramIcon style={{margin: "0.5rem"}}/>
-            <FacebookIcon style={{margin: "0.5rem"}}/>
-            <TwitterIcon style={{margin: "0.5rem"}}/>
-            <LinkedInIcon style={{margin: "0.5rem"}}/>
+            <div style={{justifyContent: "space-evenly", display:"flex"}}>
+            <YouTubeIcon />
+            <InstagramIcon/>
+            <FacebookIcon/>
+            <TwitterIcon />
+            <LinkedInIcon />
+            </div>
           </div>
           <div>
             <h4>Contact Us</h4>
