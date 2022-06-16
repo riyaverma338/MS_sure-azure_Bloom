@@ -2,7 +2,6 @@
 // import Topic1Detail from "./components/Modules/Disease/DiseaseInfo/Topic1Detail";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Login from "./components/autherisation/Login";
-import DoctorMain from "./components/Doctors/DoctorMain";
 
 import HomePage from "./components/HomePage/HomePage";
 import Main from "./components/LandingPage/Main";
@@ -17,7 +16,6 @@ function App() {
           <Route exact path="/home" element={<HomePage />} />
           <Route exact path="/login" element={<Login />} />
           <Route exact path="/module" element={<BreastCancer />} />
-          {/* <Route exact path="/doctor" element={<DoctorMain />} /> */}
         </Routes>
       </Router>
     </>
@@ -25,10 +23,3 @@ function App() {
 }
 
 export default App;
-
-//Femcure
-//WooCure
-//Bloom(in good health; free or recovered from illness, A person who is blooming has a healthy,
-//energetic, and attractive appearance: Jo looked really well,)
-//BloomHer
-
