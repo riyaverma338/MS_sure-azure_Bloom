@@ -1,5 +1,4 @@
 import React from "react";
-import Sidebar from "../../Template/Sidebar";
 import "../../../../css/BreastCancerCSS/Topic1.css";
 import { BsArrowRightCircle } from "react-icons/bs";
 
@@ -57,9 +56,6 @@ const Topic1 = () => {
   return (
     <>
       <div className="main-container">
-        <div className="sidebar">
-          <Sidebar />
-        </div>
         <div className="topic-mainbar">
           <h2 className="topic-section-head">What is Breast Cancer?</h2>
           <p className="topic-section-content">
