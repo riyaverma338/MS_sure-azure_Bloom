@@ -9,11 +9,11 @@ export default function Header() {
   // const [userContext, setUserContext] = useContext(UserContext)
   const handleRedirect=(e)=>{
     e.preventDefault();
-    if(auth){
-      window.location.href="/"
+    if(auth.currentUser){
+      window.location.href="/home"
     }
     else{
-      window.location.href="/"
+      window.location.href="/login"
     }
   }
 

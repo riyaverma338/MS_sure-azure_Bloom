@@ -7,6 +7,7 @@ import DoctorMain from "./components/Doctors/DoctorMain";
 import HomePage from "./components/HomePage/HomePage";
 import Main from "./components/LandingPage/Main";
 import BreastCancer from "./components/Modules/Disease/DiseaseInitial/BreastCancer";
+import HealthBot from "./components/Modules/Disease/healthBot/HealthBot";
 // import Topic1 from "../src/components/Modules/Disease/DiseaseInfoCards/Topic1";
 function App() {
   return (

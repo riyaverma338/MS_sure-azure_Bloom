@@ -13,3 +13,43 @@
     width: 60%;
     margin: 3rem auto;
 }
+
+
+
+.appoint-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(11px);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.white-bg{
+     		    width: 600px;
+     		    background: white;
+     		    border-radius: 10px;
+     		    height: 90vh;
+     		    box-shadow: rgb(14 30 37 / 12%) 0px 2px 4px 0px, rgb(14 30 37 / 32%) 0px 2px 16px 0px;
+    }
+    .white-bg>img{
+     		    height: 22px;
+     		    margin-left: 93%;
+     		    margin-top: 3%;
+                cursor: pointer;
+    }
+    .white-bg>h3{
+        font-size: 22px;
+    text-align: center;
+    margin: 0.7rem 0;
+    font-weight: 400
+    }
+    .white-bg>div>iframe{
+     		    height: 77vh;
+     		    width: 100%;
+    }
+    
