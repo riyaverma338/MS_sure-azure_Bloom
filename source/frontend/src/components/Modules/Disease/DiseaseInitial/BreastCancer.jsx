@@ -27,6 +27,7 @@ const BreastCancer = () => {
 
   return (
     <>
+    <ModuleNav/>
       <div className="main-container" id="diseaseContainer">
         <div className="sidebar">
           <Sidebar handlesetState={setState}/>

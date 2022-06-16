@@ -14,13 +14,13 @@ export default function DoctorMain() {
     e.preventDefault()
     setShowAppointment(true)
     window.scroll(0,0)
-    document.getElementById("diseaseContainer").style.overflow="hidden"
+    document.getElementById("root").style.overflow="hidden"
   }
   
   const closeModal=(e)=>{
     e.preventDefault()
     setShowAppointment(false)
-    document.getElementById("diseaseContainer").style.overflow="initial"
+    document.getElementById("root").style.overflow="initial"
 
   }
 
