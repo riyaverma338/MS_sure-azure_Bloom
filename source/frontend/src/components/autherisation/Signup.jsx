@@ -21,11 +21,7 @@ const Signup=()=>{
     const isFirstRender = useRef(true)
   
   
-    useEffect(()=>{
-      console.log(auth)
-      console.log(error)
-    },[error])
-  
+   
     useEffect(() => {
       if (!isFirstRender.current) {
         window.location.href="/home"
@@ -95,6 +91,7 @@ const Signup=()=>{
           final.confirm(otp).then((result) => {
               console.log(otp+" "+result)
         setOtpStatus(true)
+        window.location.href="/home"  
           }).catch((err) => {
               alert("Wrong code");
           })
@@ -124,29 +121,29 @@ const Signup=()=>{
         </div>
       </center>
     </div>
-    :
-    <form className='auth-form' onSubmit={formSubmitHandler}>
-      <input id="firstName"
-              placeholder="First Name"
-              onChange={e => setFirstName(e.target.value)}
-              value={firstName}
-      />
-      <input  id="lastName"
-              placeholder="Last Name"
-              onChange={e => setLastName(e.target.value)}
-              value={lastName}
-      />
-      <input id="password"
-              placeholder="Password"
-              type="password"
-              onChange={e => setPassword(e.target.value)}
-              value={password}
-            />
-      <input id="phoneNumber"
-      type="tel"
-      value={mynumber} style={{display:"none"}}/>
-      <button intent="primary" placeholder="Register" fill type="submit">Register</button> 
-    </form>
+    :""
+    // <form className='auth-form' onSubmit={formSubmitHandler}>
+    //   <input id="firstName"
+    //           placeholder="First Name"
+    //           onChange={e => setFirstName(e.target.value)}
+    //           value={firstName}
+    //   />
+    //   <input  id="lastName"
+    //           placeholder="Last Name"
+    //           onChange={e => setLastName(e.target.value)}
+    //           value={lastName}
+    //   />
+    //   <input id="password"
+    //           placeholder="Password"
+    //           type="password"
+    //           onChange={e => setPassword(e.target.value)}
+    //           value={password}
+    //         />
+    //   <input id="phoneNumber"
+    //   type="tel"
+    //   value={mynumber} style={{display:"none"}}/>
+    //   <button intent="primary" placeholder="Register" fill type="submit">Register</button> 
+    // </form>
       }
       
       <div id='otpAnim' style={{display:"none"}}>
